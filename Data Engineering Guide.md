@@ -8,7 +8,7 @@
   
 ![data_engineering_image](https://www.altexsoft.com/static/blog-post/2023/11/41981453-7655-4463-9c06-cb6e80b69d04.webp)
 
-- 1. Data ingestion (acquisition) moves data from multiple sources — SQL and NoSQL databases, IoT devices, websites, streaming services, etc. — to a target system to be transformed for further analysis. Data comes in various forms and can be both structured and unstructured.
+  1. Data ingestion (acquisition) moves data from multiple sources — SQL and NoSQL databases, IoT devices, websites, streaming services, etc. — to a target system to be transformed for further analysis. Data comes in various forms and can be both structured and unstructured.
  
   2. Data transformation adjusts disparate data to the needs of end users. It involves removing errors and duplicates from data, normalizing it, and converting it into the needed format.
  
