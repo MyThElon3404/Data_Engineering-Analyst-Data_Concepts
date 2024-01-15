@@ -6,7 +6,7 @@
   
 ![data_engineering_image](https://www.altexsoft.com/static/blog-post/2023/11/41981453-7655-4463-9c06-cb6e80b69d04.webp)
 
-- Data flow orchestration provides visibility into the data engineering process, ensuring that all tasks are successfully completed. It coordinates and continuously tracks data workflows to detect and fix data quality and performance issues.
+- Data flow orchestration provides visibility into the data engineering process, ensuring that all tasks are completed. It coordinates and continuously tracks data workflows to detect and fix data quality and performance issues.
 #### The mechanism that automates ingestion, transformation, and serving steps of the data engineering process is known as a data pipeline.
 
   1. Data ingestion (acquisition) moves data from multiple sources — SQL and NoSQL databases, IoT devices, websites, streaming services, etc. — to a target system to be transformed for further analysis. Data comes in various forms and can be both structured and unstructured.
@@ -51,21 +51,76 @@
 
 # Data warehouse :
 - A data warehouse (DW) is a central repository storing data in queryable forms. From a technical standpoint, a data warehouse is a relational database optimized for reading, aggregating, and querying large volumes of data. Traditionally, DWs only contained structured data or data that could be arranged in tables. However, modern DWs can also support unstructured data (such as images, pdf files, and audio formats).
-- 
+- Without DWs, data scientists would have to pull data straight from the production database and may report different results to the same question or cause delays and even outages. Serving as an enterprise’s single source of truth, the data warehouse simplifies the organization’s reporting and analysis, decision-making, and metrics forecasting.
 
+![DW](https://www.altexsoft.com/static/blog-post/2023/11/c13b90df-c232-4676-b7da-80218aacf191.webp)
 
+- Data warehouse storage. The foundation of data warehouse architecture is a database that stores all enterprise data allowing business users to access it to draw valuable insights.
+- Data architects usually decide between on-premises and cloud-hosted DWs noting how the business can benefit from this or that solution. Although the cloud environment is more cost-efficient, easier to scale up or down, and isn’t limited to a prescribed structure
 
+# Metadata :
+- Adding business context to data, metadata helps transform it into comprehensible knowledge. Metadata defines how data can be changed and processed. It contains information about any transformations or operations applied to source data while loading it into the data warehouse.
 
+# Data marts :
+- Simply speaking, a data mart is a smaller data warehouse (their size is usually less than 100Gb.). They become necessary when the company and the amount of its data grow and it becomes too long and ineffective to search for information in an enterprise DW. Instead, data marts are built to allow different departments (e.g., sales, marketing, C-suite) to access relevant information quickly and easily.
 
+![DM](https://www.altexsoft.com/static/blog-post/2023/11/f1f098ea-bb13-4ea4-a903-8aec52b15eab.webp)
 
+#### There are three main types of data marts :
+  1. Dependent data marts are created from an enterprise DW and used as a primary source of information (also known as a top-down approach).
+  2. Independent data marts are standalone systems that function without DWs extracting information from various external and internal sources (it’s also known as a top-down approach).
+  3. Hybrid data marts combine information from both DW and other operational systems.
 
+#### So, the main difference between data warehouses and data marts is that a DW is a large repository that holds all company data extracted from multiple sources, making it difficult to process and manage queries. Meanwhile, a data mart is a smaller repository containing a limited amount of data for a particular business group or department.
 
+# OLAP and OLAP cubes :
+- OLAP or Online Analytical Processing refers to the computing approach that allows users to analyze multidimensional data.
+- OLTP or Online Transactional Processing, a simpler method of interacting with databases, is not designed for analyzing massive amounts of data from different perspectives.
+ #### Traditional databases resemble spreadsheets, using the two-dimensional structure of rows and columns. However, in OLAP, datasets are presented in multidimensional structures -- OLAP cubes. Such structures enable efficient processing and advanced analysis of vast amounts of varied data. For example, a sales department report would include such dimensions as product, region, sales representative, sales amount, month, and so on.
 
+- Information from DWs is aggregated and loaded into the OLAP cube, where it gets precalculated and is readily available for user requests.
 
+![OLAP_cubes](https://www.altexsoft.com/static/blog-post/2023/11/c5cb8ef8-88cf-471c-9c50-e935b35e9101.webp)
 
+# Big data engineering :
+- Speaking about data engineering, we can’t ignore Big Data. Grounded in the four Vs – volume, velocity, variety, and veracity. Big Data engineering is about building massive reservoirs and highly scalable and fault-tolerant distributed systems.
+- Big data architecture differs from conventional data handling, as here we’re talking about such massive volumes of rapidly changing information streams that a data warehouse can’t accommodate. That’s where a data lake comes in handy.
 
+![BDE](https://www.altexsoft.com/static/blog-post/2023/11/5d7d3c58-b820-4045-b44d-24875a7aa245.webp)
 
+- A data lake uses the ELT approach and starts data loading immediately after extracting it, handling raw — often unstructured — data.
+- A data lake is worth building in those projects that will scale and need a more advanced architecture. Besides, it’s very convenient when the purpose of the data hasn’t been determined yet. In this case, you can load data quickly, store it, and modify it as necessary.
+- Data lakes are also a powerful tool for data scientists and ML engineers, who would use raw data to prepare it for predictive analytics and machine learning.
+- Lakes are built on large, distributed clusters that would be able to store and process masses of data. A famous example of such a data lake platform is Hadoop.
 
+# Hadoop and its ecosystem :
+- Hadoop is a large-scale, Java-based data processing framework capable of analyzing massive datasets. The platform facilitates splitting data analysis jobs across - various servers and running them in parallel. It consists of three components:
+  1. Hadoop Distributed File System (HDFS) capable of storing Big Data,
+  2. a processing engine MapReduce, and
+  3. a resource manager YARN to control and monitor workloads.
+- Also, Hadoop benefits from a vast ecosystem of open-source tools that enhance its capabilities and address various challenges of Big Data.
 
+![Hadoop](https://www.altexsoft.com/static/blog-post/2023/11/d735f675-32ee-434b-9965-c2ee09402c7b.webp)
 
+# Streaming analytics instruments :
+- Tools enabling streaming analytics form a vital group within the Hadoop ecosystem. These include -
+  1. Apache Spark, a computing engine for large datasets with near-real-time processing capabilities; 
+  2. Apache Storm, a real-time computing system for unbounded streams of data (those that have a start but no defined end and must be continuously processed);
+  3. Apache Flink processing both unbounded and bounded data streams (those with a defined start and end);
+  4. Apache Kafka, a streaming platform for messaging, storing, processing, and integrating large volumes of data;
 
+# Enterprise data hub :
+- When a big data pipeline is not managed correctly, data lakes quickly become data swamps – a collection of miscellaneous data that is neither governable nor usable. A new data integration approach called a data hub emerged to tackle this problem.
+- Enterprise data hubs (EDHs) are the next generation of data architecture aiming at sharing managed data between systems. They connect multiple sources of information, including DWs and data lakes.
+
+# Role of data engineer :
+- Juan De Dios Santos, a data engineer himself, defines this role in the following way: “In a multidisciplinary team that includes data scientists, BI engineers, and data engineers, the role of the data engineer is mostly to ensure the quality and availability of the data.”
+
+# Skills and qualifications :
+- Data engineering lies at the intersection of software engineering and data science, which leads to skill overlapping.
+
+![SQ](https://www.qa.altexsoft-com.altexsoft.pro/static/blog-post/2023/10/0934bd1f-dba4-46ff-b5c2-d28d9302c204.webp)
+
+- Data engineers use programming languages to enable reliable and convenient access to data and databases.
+- A data engineer should know multiple kinds of databases (SQL and NoSQL), data platforms, concepts such as MapReduce, batch and stream processing, and even some basic theory of data itself, e.g., data types, and descriptive statistics.
+- Data engineers need experience with various data storage technologies and frameworks they can combine to build data pipelines.
