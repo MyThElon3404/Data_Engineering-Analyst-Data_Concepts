@@ -10,6 +10,7 @@ Here we get to know about all the data concepts that are useful.
 - PySpark
 - Excel
 - DataBricks
+- Snowflake
 
 # Terminologies
 
