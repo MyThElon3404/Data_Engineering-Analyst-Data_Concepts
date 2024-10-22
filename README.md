@@ -2,6 +2,7 @@
 Here we get to know about all the data concepts that are useful.
 
 AWS Data Analysis - (https://medium.com/@akram.asma/analytics-on-aws-4d68c102e77a)
+Azure Data Engineering - https://archive.ph/FqmwU#selection-1115.3-1115.34
 
 # Technologies
 
