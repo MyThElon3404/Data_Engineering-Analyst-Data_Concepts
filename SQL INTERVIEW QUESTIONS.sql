@@ -533,3 +533,86 @@ CREATE CLUSTERED INDEX idx_id ON Employees(id); – Creates a clustered index on
 CREATE CLUSTERED INDEX idx_price ON Products(price); – Orders Products by price
 
 
+48. What is a Self Join?
+
+Answer: A Self Join is a join operation where a table is joined with itself, typically used to compare rows within the same table.
+
+Examples:
+
+SELECT a.name AS Employee, b.name AS Manager FROM Employees a JOIN Employees b ON a.manager_id = b.id; – This query lists each employee along with their manager.
+
+SELECT a.product_id, a.name, b.name AS RelatedProduct FROM Products a JOIN Products b ON a.category_id = b.category_id AND a.product_id != b.product_id; – Lists related products within the same category, excluding the product itself.
+
+
+49. Explain the use of the COALESCE function.
+
+Answer: COALESCE returns the first non-NULL value in a list of expressions, making it useful for handling NULL values across multiple columns.
+
+Examples:
+
+SELECT COALESCE(phone, mobile, 'No Contact') AS ContactInfo FROM Employees; – Returns the first available contact number, or 'No Contact' if all are NULL.
+
+SELECT name, COALESCE(salary, 30000) AS salary FROM Employees; – Sets a default salary of 30,000 for employees with NULL salaries.
+
+
+50. What is the difference between DELETE and DROP?
+
+Answer: DELETE removes rows from a table based on conditions but keeps the table structure, while DROP removes the entire table or database structure.
+
+Examples:
+
+DELETE FROM Employees WHERE department = 'Sales'; – Deletes only rows of employees in the Sales department.
+
+DROP TABLE Employees; – Completely removes the Employees table along with all its data.
+
+
+---
+
+SQL Development-Specific Questions
+
+---
+
+1. How do you optimize a query in SQL?
+
+Answer: Query optimization techniques include using indexes, avoiding SELECT *, minimizing joins on large tables, and limiting the number of rows processed.
+
+Examples:
+
+Using indexes: CREATE INDEX idx_department ON Employees(department); – Speeds up searches on department.
+
+Avoiding SELECT *: SELECT name, salary FROM Employees; – Retrieves only needed columns, reducing load.
+
+
+2. What are stored procedures, and why are they used?
+
+Answer: A stored procedure is a precompiled set of SQL statements stored in the database, used to encapsulate complex logic and improve performance by reusing the compiled code.
+
+Examples:
+
+CREATE PROCEDURE GetEmployeeInfo AS SELECT * FROM Employees; – A simple procedure to retrieve all employees.
+
+CREATE PROCEDURE UpdateSalary (@id INT, @newSalary DECIMAL) AS BEGIN UPDATE Employees SET salary = @newSalary WHERE id = @id; END; – A procedure to update an employee’s salary based on ID.
+
+
+3. What are Triggers in SQL?
+
+Answer: A trigger is a stored procedure that automatically runs in response to specific events on a table, such as INSERT, UPDATE, or DELETE.
+
+Examples:
+
+CREATE TRIGGER trgAfterInsert ON Employees AFTER INSERT AS BEGIN PRINT 'A new employee was added.'; END; – Prints a message after an employee is added.
+
+CREATE TRIGGER trgBeforeDelete ON Orders BEFORE DELETE AS BEGIN PRINT 'Order deletion initiated.'; END; – Runs before an order deletion.
+
+
+4. How do you handle transactions in SQL?
+
+Answer: Transactions are managed with BEGIN, COMMIT, and ROLLBACK statements to ensure data consistency. Transactions are either fully completed or rolled back to a previous state.
+
+Examples:
+
+BEGIN TRANSACTION; UPDATE Accounts SET balance = balance - 500 WHERE id = 1; COMMIT; – Deducts 500 from account 1, committing the change.
+
+BEGIN TRANSACTION; UPDATE Accounts SET balance = balance - 500 WHERE id = 1; ROLLBACK; – Rolls back the update, undoing the deduction.
+
+
