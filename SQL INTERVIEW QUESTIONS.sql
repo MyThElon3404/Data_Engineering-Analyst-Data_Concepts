@@ -343,75 +343,6 @@ ROLLBACK;
 – Reverts changes after the DELETE operation if needed.
 
 
-Great! Let’s keep going with the next set of SQL interview questions, explanations, and examples.
-
-
-31. What is a VIEW in SQL?
-
-Answer: A VIEW is a virtual table based on the result set of a query. It does not store data itself but provides a way to simplify complex queries.
-
-Examples:
-
-CREATE VIEW HighSalaryEmployees AS SELECT name, salary FROM Employees WHERE salary > 50000; – Creates a view showing employees with a salary above 50,000.
-
-SELECT * FROM HighSalaryEmployees; – Retrieves data from the view as if it were a table.
-
-
-32. What are Indexes in SQL, and why are they used?
-
-Answer: Indexes are special data structures that improve the speed of data retrieval operations on a table. They work similarly to a book index, allowing faster data access but may slow down INSERT, UPDATE, and DELETE operations.
-
-Examples:
-
-CREATE INDEX idx_name ON Employees(name); – Creates an index on the name column of the Employees table to speed up name-based searches.
-
-CREATE INDEX idx_salary ON Employees(salary DESC); – Creates an index on salary in descending order to optimize queries that search by highest salaries.
-
-
-33. What is the purpose of the HAVING clause?
-
-Answer: HAVING is used to filter groups in SQL, typically in combination with GROUP BY. It allows conditions on aggregated data, which the WHERE clause cannot handle.
-
-Examples:
-
-SELECT department, COUNT(*) FROM Employees GROUP BY department HAVING COUNT(*) > 5; – Lists departments with more than five employees.
-
-SELECT manager_id, AVG(salary) FROM Employees GROUP BY manager_id HAVING AVG(salary) > 50000; – Finds managers whose teams have an average salary above 50,000.
-
-
-34. Explain the difference between UNION and UNION ALL.
-
-Answer: UNION combines the result sets of two queries and removes duplicates, while UNION ALL includes duplicates.
-
-Examples:
-
-SELECT name FROM Employees WHERE department = 'HR' UNION SELECT name FROM Employees WHERE department = 'Sales'; – Combines names from HR and Sales departments, removing duplicates.
-
-SELECT name FROM Employees WHERE department = 'HR' UNION ALL SELECT name FROM Employees WHERE department = 'Sales'; – Combines names from both departments, including duplicates.
-
-
-35. What is a Primary Key?
-
-Answer: A Primary Key is a unique identifier for records in a table. It must contain unique values and cannot be NULL.
-
-Examples:
-
-CREATE TABLE Employees (id INT PRIMARY KEY, name VARCHAR(50)); – Defines id as the primary key in the Employees table.
-
-ALTER TABLE Orders ADD PRIMARY KEY (order_id); – Adds a primary key to the order_id column of the Orders table.
-
-
-36. What is a Foreign Key?
-
-Answer: A Foreign Key is a field in a table that uniquely identifies a row in another table. It creates a relationship between two tables and ensures referential integrity.
-
-Examples:
-
-CREATE TABLE Orders (order_id INT PRIMARY KEY, customer_id INT, FOREIGN KEY (customer_id) REFERENCES Customers(id)); – Links customer_id in Orders to id in Customers.
-
-ALTER TABLE Employees ADD FOREIGN KEY (department_id) REFERENCES Departments(id); – Adds a foreign key to link department_id in Employees to id in Departments.
-
-
 37. Explain the LEFT JOIN and RIGHT JOIN.
 
 Answer: LEFT JOIN returns all rows from the left table and matching rows from the right table. RIGHT JOIN does the reverse, returning all rows from the right table with matching rows from the left.
@@ -1001,16 +932,6 @@ The SUM(CASE WHEN ...) sums the sales for each year.
 The YoY growth percentage is calculated as:
 
 
-\text{YoY Growth} = \left( \frac{{\text{Sales for 2024} - \text{Sales for 2023}}}{{\text{Sales for 2023}}} \right) \times 100
-
-The NULLIF function is used to prevent division by zero.
-
-
-Sample Output:
-
-
----
-
 2. Quarter-Over-Quarter (QoQ) Growth
 
 Step 1: Create Sample Table for QoQ Growth
@@ -1049,13 +970,6 @@ The sales for each quarter are summed using SUM(CASE WHEN ...).
 
 The QoQ growth percentage is calculated as:
 
-
-\text{QoQ Growth} = \left( \frac{{\text{Sales in current quarter} - \text{Sales in previous quarter}}}{{\text{Sales in previous quarter}}} \right) \times 100
-
-Sample Output:
-
-
----
 
 3. Month-Over-Month (MoM) Growth
 
@@ -1507,11 +1421,6 @@ Joins: Efficient joins are used to bring together relevant data from Orders, Pro
 
 The results of these SQL queries will help the business understand customer purchasing patterns, top-selling products, and create personalized offers to increase customer retention.
 
-
-
-
-
----
 
 Project 2: Financial Reporting and Data Aggregation for a Bank
 
