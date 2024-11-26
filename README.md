@@ -7,6 +7,7 @@ Here we get to know about all the data concepts that are useful.
 - mysql practice - https://github.com/XD-DENG/SQL-exercise | https://github.com/jozo/testdome-sql-solutions
 - sql interview - https://github.com/kansiris/SQL-interview-questions
 - SQL tut - https://www.kdnuggets.com/10-github-repositories-to-master-sql
+- Azure for data analyst - https://archive.ph/Y6jF7
 
 # Technologies
 
