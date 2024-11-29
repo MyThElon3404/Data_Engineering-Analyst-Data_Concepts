@@ -1,0 +1,4 @@
+- SQL Interview Ques. - https://www.datacamp.com/blog/top-sql-interview-questions-and-answers-for-beginners-and-intermediate-practitioners
+- Python Interview Ques. - https://www.datacamp.com/blog/top-python-interview-questions-and-answers
+- PySpark Interview Ques. - https://www.datacamp.com/blog/pyspark-interview-questions
+- Power BI - https://www.xelplus.com/power-bi-interview-questions/
