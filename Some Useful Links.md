@@ -2,4 +2,4 @@
 - Python Interview Ques. - https://www.datacamp.com/blog/top-python-interview-questions-and-answers
 - PySpark Interview Ques. - https://www.datacamp.com/blog/pyspark-interview-questions
 - Power BI - https://www.xelplus.com/power-bi-interview-questions/
-- SQL Interview Questions - https://github.com/mrinal1704/SQL-Leetcode-Challenge/tree/master/Easy
+- SQL coding Interview Questions - https://github.com/mrinal1704/SQL-Leetcode-Challenge/tree/master/Easy
