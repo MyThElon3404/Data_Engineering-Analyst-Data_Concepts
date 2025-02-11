@@ -1,31 +1,37 @@
 - Azure Step by Step - https://medium.com/@vikasrahar007/a-4-week-journey-to-becoming-an-azure-data-analyst-ec67d626b9c9
 
-1. Basic Foundations: Understanding Azure and Cloud Basics
+## 1. Basic Foundations: Understanding Azure and Cloud Basics
 Start with fundamental cloud concepts and Azure services relevant to data analytics.
 
-- Key Topics to Learn:
+### - Key Topics to Learn:
 1. Cloud Computing Basics: Learn about IaaS, PaaS, SaaS, and cloud deployment models (Public, Private, Hybrid).
-Introduction to Azure: Overview of Azure Portal, Resource Groups, Subscriptions, and Pricing.
-Azure Storage Basics: Learn about Blob Storage, Data Lake, and Azure Files.
-Azure SQL Database: Introduction to Azure SQL, tables, queries, and data management.
-Azure Data Factory (ADF) Basics: Understanding ETL processes and data pipelines.
-Resources:
-Microsoft Learn: Azure Fundamentals
-Coursera: "Microsoft Azure Fundamentals AZ-900"
-Udemy: "AZ-900: Microsoft Azure Fundamentals Exam Prep"
-Book: Microsoft Azure For Beginners by Adney Ainsley
-2. Intermediate Level: Building Data Analytics Skills in Azure
+2. Introduction to Azure: Overview of Azure Portal, Resource Groups, Subscriptions, and Pricing.
+3. Azure Storage Basics: Learn about Blob Storage, Data Lake, and Azure Files.
+4. Azure SQL Database: Introduction to Azure SQL, tables, queries, and data management.
+5. Azure Data Factory (ADF) Basics: Understanding ETL processes and data pipelines.
+
+### - Resources:
+
+1. Microsoft Learn: Azure Fundamentals
+2. Coursera: "Microsoft Azure Fundamentals AZ-900"
+3. Udemy: "AZ-900: Microsoft Azure Fundamentals Exam Prep"
+4. Book: Microsoft Azure For Beginners by Adney Ainsley
+   
+## 2. Intermediate Level: Building Data Analytics Skills in Azure
 Once you understand the basics, start working with core Azure services for data analytics.
 
-Key Topics to Learn:
-Azure Synapse Analytics: Learn how to work with data warehouses and big data processing.
-Azure Data Factory (ADF) Advanced: Data movement, transformation, and orchestration.
-Azure Data Lake: Storing structured and unstructured data for big data analytics.
-Azure Databricks: Working with Apache Spark for large-scale data processing.
-Azure SQL & Cosmos DB: Learn about structured and NoSQL databases.
-Azure Monitor & Log Analytics: Learn how to monitor and troubleshoot data services.
-Resources:
-Microsoft Learn: Azure Data Services
+### - Key Topics to Learn:
+
+1. Azure Synapse Analytics: Learn how to work with data warehouses and big data processing.
+2. Azure Data Factory (ADF) Advanced: Data movement, transformation, and orchestration.
+3. Azure Data Lake: Storing structured and unstructured data for big data analytics.
+4. Azure Databricks: Working with Apache Spark for large-scale data processing.
+5. Azure SQL & Cosmos DB: Learn about structured and NoSQL databases.
+6. Azure Monitor & Log Analytics: Learn how to monitor and troubleshoot data services.
+
+### - Resources:
+
+1. Microsoft Learn: Azure Data Services
 Udemy: "Azure Data Engineer Certification DP-203"
 Book: Exam Ref DP-900 Microsoft Azure Data Fundamentals by Daniel Seara
 3. Advanced Level: Mastering Azure for Real-World Data Analytics
