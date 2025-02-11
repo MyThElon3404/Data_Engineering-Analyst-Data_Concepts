@@ -4,7 +4,7 @@
 Start with fundamental cloud concepts and Azure services relevant to data analytics.
 
 - Key Topics to Learn:
-Cloud Computing Basics: Learn about IaaS, PaaS, SaaS, and cloud deployment models (Public, Private, Hybrid).
+1. Cloud Computing Basics: Learn about IaaS, PaaS, SaaS, and cloud deployment models (Public, Private, Hybrid).
 Introduction to Azure: Overview of Azure Portal, Resource Groups, Subscriptions, and Pricing.
 Azure Storage Basics: Learn about Blob Storage, Data Lake, and Azure Files.
 Azure SQL Database: Introduction to Azure SQL, tables, queries, and data management.
