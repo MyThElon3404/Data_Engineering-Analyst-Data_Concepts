@@ -3,14 +3,14 @@
 ## 1. Basic Foundations: Understanding Azure and Cloud Basics
 Start with fundamental cloud concepts and Azure services relevant to data analytics.
 
-### - Key Topics to Learn:
+- ### Key Topics to Learn:
 1. Cloud Computing Basics: Learn about IaaS, PaaS, SaaS, and cloud deployment models (Public, Private, Hybrid).
 2. Introduction to Azure: Overview of Azure Portal, Resource Groups, Subscriptions, and Pricing.
 3. Azure Storage Basics: Learn about Blob Storage, Data Lake, and Azure Files.
 4. Azure SQL Database: Introduction to Azure SQL, tables, queries, and data management.
 5. Azure Data Factory (ADF) Basics: Understanding ETL processes and data pipelines.
 
-### - Resources:
+- ### Resources:
 1. Microsoft Learn: Azure Fundamentals
 2. Coursera: "Microsoft Azure Fundamentals AZ-900"
 3. Udemy: "AZ-900: Microsoft Azure Fundamentals Exam Prep"
@@ -19,7 +19,7 @@ Start with fundamental cloud concepts and Azure services relevant to data analyt
 ## 2. Intermediate Level: Building Data Analytics Skills in Azure
 Once you understand the basics, start working with core Azure services for data analytics.
 
-### - Key Topics to Learn:
+- ### Key Topics to Learn:
 1. Azure Synapse Analytics: Learn how to work with data warehouses and big data processing.
 2. Azure Data Factory (ADF) Advanced: Data movement, transformation, and orchestration.
 3. Azure Data Lake: Storing structured and unstructured data for big data analytics.
@@ -27,7 +27,7 @@ Once you understand the basics, start working with core Azure services for data 
 5. Azure SQL & Cosmos DB: Learn about structured and NoSQL databases.
 6. Azure Monitor & Log Analytics: Learn how to monitor and troubleshoot data services.
 
-### - Resources:
+- ### Resources:
 1. Microsoft Learn: Azure Data Services
 2. Udemy: "Azure Data Engineer Certification DP-203"
 3. Book: Exam Ref DP-900 Microsoft Azure Data Fundamentals by Daniel Seara
@@ -35,7 +35,7 @@ Once you understand the basics, start working with core Azure services for data 
 ## 3. Advanced Level: Mastering Azure for Real-World Data Analytics
 At this stage, you should focus on automation, optimization, and advanced analytics.
 
-### - Key Topics to Learn:
+- ### Key Topics to Learn:
 1. Azure Machine Learning: Basics of AI and ML using Azure ML Studio.
 2. Advanced Azure Synapse & Databricks: Optimizing big data workloads.
 3. Power BI with Azure: Connecting Power BI to Azure SQL, Synapse, and Data Lake.
@@ -43,7 +43,7 @@ At this stage, you should focus on automation, optimization, and advanced analyt
 5. Security & Governance: Azure Role-Based Access Control (RBAC) and Data Security.
 6. Azure Logic Apps & Functions: Automating workflows and serverless computing.
 
-### - Resources:
+- ### Resources:
 1. Microsoft Learn: Advanced Data Analytics on Azure
 2. Udacity: "Azure Data Engineer Nanodegree"
 3. Book: Microsoft Azure Data Solutions by John Savill
@@ -51,14 +51,14 @@ At this stage, you should focus on automation, optimization, and advanced analyt
 ## 4. Practical Application: Hands-On Learning
 To solidify your skills, work on real-world projects and certifications.
 
-### - Ways to Gain Experience:
+- ### Ways to Gain Experience:
 1. Microsoft Azure Free Account: Set up a free-tier account for hands-on practice.
 2. Build Data Pipelines: Use Azure Data Factory to ingest, process, and visualize data.
 3. Work with Azure SQL & Power BI: Connect, analyze, and visualize datasets.
 4. Contribute to Open-Source Projects: Join Azure data projects on GitHub.
 5. Freelance or Intern: Offer data analytics services using Azure.
 
-## - Certifications to Validate Skills:
+- ### Certifications to Validate Skills:
 1. Microsoft Certified: Azure Data Fundamentals (DP-900)
 2. Microsoft Certified: Azure Data Engineer Associate (DP-203)
 3. Microsoft Certified: Azure AI Fundamentals (AI-900)
