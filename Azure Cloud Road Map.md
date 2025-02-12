@@ -58,11 +58,6 @@ To solidify your skills, work on real-world projects and certifications.
 4. Contribute to Open-Source Projects: Join Azure data projects on GitHub.
 5. Freelance or Intern: Offer data analytics services using Azure.
 
-- ### Certifications to Validate Skills:
-1. Microsoft Certified: Azure Data Fundamentals (DP-900)
-2. Microsoft Certified: Azure Data Engineer Associate (DP-203)
-3. Microsoft Certified: Azure AI Fundamentals (AI-900)
-
 ## 5. Resources: Where to Learn?
 Here are some top resources to follow:
 
@@ -70,4 +65,21 @@ Here are some top resources to follow:
 2. Coursera: "Azure Data Engineer Associate"
 3. Pluralsight: "Azure Data Services Essentials"
 4. YouTube Channels: Azure Friday, Guy in a Cube (for Power BI & Azure)
+
+## Power BI and Azure cloud
+
+1. Power BI with Azure SQL Database (Direct Query / Import Mode)
+   Best for: Analyzing structured transactional data from Azure SQL Database.
+
+   Approach 1: Direct Query
+   1. Power BI connects directly to Azure SQL Database.
+   2. Real-time data updates.
+   3. No need to import data into Power BI.
+
+   Approach 2: Import Mode
+   1. Data is imported from Azure SQL into Power BI.
+   2. Faster performance as data is cached.
+   3. Refresh required for updates.
+
+
 
