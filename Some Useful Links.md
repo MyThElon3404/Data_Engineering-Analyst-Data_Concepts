@@ -3,3 +3,4 @@
 - PySpark Interview Ques. - https://www.datacamp.com/blog/pyspark-interview-questions
 - Power BI - https://www.xelplus.com/power-bi-interview-questions/
 - SQL coding Interview Questions - https://github.com/mrinal1704/SQL-Leetcode-Challenge/tree/master/Easy
+- PySpark - https://www.youtube.com/watch?v=1J7qZ5SNGaQ
