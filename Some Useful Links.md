@@ -11,3 +11,4 @@
 - Art of Solving SQL - https://www.youtube.com/watch?v=7RZc0VSGzAw
 - PySpark - https://www.youtube.com/watch?v=1J7qZ5SNGaQ
 - Python for Data Engineers & Data Analysts - https://www.youtube.com/watch?v=UnvvW_ukiDo
+- Azure - https://www.youtube.com/results?search_query=azure+ansh+lamba
