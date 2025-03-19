@@ -4,6 +4,7 @@
 - PySpark Interview - https://www.datacamp.com/blog/pyspark-interview-questions
 - Power BI - https://www.xelplus.com/power-bi-interview-questions/
 - SQL coding Interview Questions - https://github.com/mrinal1704/SQL-Leetcode-Challenge/tree/master/Easy | https://github.com/mrinal1704/SQL-Leetcode-Challenge/blob/master/Medium/Active%20Businesses.sql
+- Azure Data Factory - https://www.datacamp.com/blog/azure-data-factory-interview-questions
 ------------------------------------------------------------------------------------------------------------------------------------------------
 ## Tutorial Links
 - Best YT Channels for Power BI - Goodly, Satyajit Pattnaik
